@@ -80,9 +80,9 @@ int main(void) {
     // Exibição da mensagem "APROVADO" ou "REPROVADO", de acordo com o
     // conceito:
     if (conceito == 'A' || conceito == 'B' || conceito == 'C') {
-        std::cout << "-------------------- APROVADO -------------------" << std::endl;
+        std::cout << "-------------------- APROVADO -------------------\n";
     } else {
-        std::cout << "-------------------- REPROVADO ------------------" << std::endl;
+        std::cout << "-------------------- REPROVADO ------------------\n";
     }
 
     // Finaliza o programa:
