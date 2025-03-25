@@ -50,7 +50,11 @@ int main() {
     for (int i = 0; i < tamanho; i++) {
         cout << i + 1 << "| ";
         for (int j = 0; j < dados[i]; j++) {
-            cout << "* ";
+            if (j > 8){
+                cout << "*  ";
+            } else {
+                cout << "* ";
+            }
         }
         cout << "\n";
     }
@@ -58,7 +62,11 @@ int main() {
     // Exibe a linha horizontal e os números das colunas abaixo dos traços
     cout << " + ";
     for (int i = 1; i <= totalColunas; i++) {
-        cout << "- ";
+        if (i > 9){
+            cout << "-- ";
+        } else {
+            cout << "- ";
+        }
     }
     cout << "\n ";
     for (int i = 0; i <= totalColunas; i++) {
